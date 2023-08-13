@@ -104,8 +104,11 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# STM32
+export STM32CUBE="STMicroelectronics/STM32Cube/bin"
+PATH="$PATH:$STM32CUBE"
 
-# # Add Visual Studio Code (code)
+# Add Visual Studio Code (code)
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 # Android Studio
@@ -134,6 +137,12 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 # RVM - ruby version manager
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+# rbenv (Ruby)
+# export PATH="$HOME/.rbenv/bin:$PATH"
+# Load rbenv automatically by appending
+# the following to ~/.bash_profile:
+# eval "$(rbenv init -)"
 
 # My custom tools
 export MY_TOOLS="$HOME/tools"
