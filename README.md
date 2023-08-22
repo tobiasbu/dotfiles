@@ -5,15 +5,22 @@
 1. https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH
 2. https://ohmyz.sh/#install
 
+### git setup
+
+```
+git config --global user.email "you@example.com"
+git config --global user.name "Tobias Ulrich"
+```
+
 ### vim 
 
-Check you have vim.tiny installed:
+1. Check you have vim.tiny installed:
 
 ```
 readlink -f `which vi`
 ```
 
-If true, then:
+2. If true, then:
 
 ```
 sudo apt update
@@ -22,7 +29,9 @@ sudo apt-get install vim-gui-common
 sudo apt-get install vim-runtime
 ```
 
-Then, open vim and run `PlugInstall` to install plugins.
+3. Install [VimPlug](https://github.com/junegunn/vim-plug)
+
+4. Then, open vim and run `PlugInstall` to install plugins.
 
 #### Clipboard support
 
@@ -45,16 +54,19 @@ set clipboard=unnamedplus
 set clipboard+=unnamed
 ```
 
-- To copy `y`;  to clipboard `"+y` = Hold Shift then press ["][+], release shift then [y]
+- To copy `y`;  to clipboard `"+y` = Ctrl+Alt+C/V
 - To paste `p`; to clipboard `"+p`
 
 #### NERDTree with icons
 
-Plugin https://github.com/ryanoasis/vim-devicons
+Plugin [vim-devicons][https://github.com/ryanoasis/vim-devicons] (added already)
 
-1. Download from this IosevkaTerm  [link](https://github.com/ryanoasis/nerd-fonts/releases)
+Download from this IosevkaTerm  [link](https://github.com/ryanoasis/nerd-fonts/releases) and setup in the terminal.
 
-2. Installing:
+
+### Font manager
+
+1. Installing:
 
 - With font-manager on Ubuntu and derivatives:
 
@@ -64,9 +76,7 @@ Plugin https://github.com/ryanoasis/vim-devicons
     sudo apt install font-manager
 ```
 
-> If your not based in Ubuntu, try to check you distro package installer.
-
-- Installing manually:
+If your not based in Ubuntu, try to check you distro package installer. Otherwise, manual install:
 
   1. Run `mkdir ~/.local/share/fonts`
   2. Run `mv ~/Downloads/iosevka.ttc ~/.local/share/fonts/iosevka.ttc`
