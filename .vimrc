@@ -86,7 +86,6 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
 
 " Shows dot files
 let NERDTreeShowHidden=1
-
 let g:NERDTreeWinPos = "right"
 
 
@@ -95,7 +94,7 @@ let g:NERDTreeWinPos = "right"
 "
 
 " NERDTree
-" Auto refreshes NERD Tree on 
+# Auto refreshes NERD Tree on 
 function NERDTreeToggleAndRefresh()
   :NERDTreeToggle
   if g:NERDTree.IsOpen()
@@ -104,10 +103,10 @@ function NERDTreeToggleAndRefresh()
 endfunction
 
 " OLD: nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <leader>r :NERDTreeFocus<cr>R<c-w>
+nnoremap <leader>r :NERDTreeFocus<cr>R
 nnoremap <C-n> :call NERDTreeToggleAndRefresh()<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-S-f> :NERDTreeFind<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
 
 " Copy and past as normal humans
 nnoremap <C-c> "+y

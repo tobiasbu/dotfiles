@@ -1,0 +1,92 @@
+
+html, body {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: inherit;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  box-sizing: border-box;
+  color: white;
+  font-size: 10pt;
+  font-family: "Sans";
+  line-height: 1;
+}
+
+.sl-side-menu {
+  position: relative;
+  width: 240px;
+  height: 100%;
+  background: white;
+  border-right: 1px solid grey;
+  box-sizing: border-box;
+}
+
+.sl-display {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#background {
+  background: black;
+  background-image: url("flower.gif");
+}
+
+#welcome {
+  margin: 0;
+  height: 15px;
+}
+
+#panel {
+  width: 320px;
+  margin: 0 auto;
+  padding: 16px;
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  background: #2d2d2d;
+}
+
+.input-container {
+  width: 100%;
+  margin: 16px 0;
+  display: flex;
+  padding: 4px;
+  box-sizing: border-box;
+  background-color: #212121;
+}
+
+.input-container > svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+#user-field > svg {
+  stroke: #ffffff4d;
+}
+
+#pass-field > svg {
+  fill: #ffffff4d;
+}
+
+input {
+  margin: 0 8px 0;
+  border: 0;
+  background-color: transparent;
+  color: white;
+  font-size: 9pt;
+  width: 100%;
+  outline: none;
+}
+
+
+
+

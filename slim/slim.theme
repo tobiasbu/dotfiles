@@ -1,0 +1,54 @@
+#  Tobi theme for slim
+
+# Background
+# valid values: stretch, tile
+background_color        #000
+
+# Welcome message
+welcome_x               16
+welcome_y               25
+welcome_font            Sans:size=9
+welcome_color           #fff
+
+# Input controls
+input_panel_x           50%
+input_panel_y           45%
+input_name_x            52
+input_name_y            68
+input_pass_x            52
+input_pass_y            115
+input_font              Sans:size=9
+input_color           	#fff
+
+# Messages (ie: shutdown)
+msg_color               #2196f3
+msg_font                Sans:size=18:bold
+msg_x                   50%
+msg_y                   20%
+
+# Session type information
+sessiontype_color           #2196f3
+sessiontype_font            Sans:size=10
+sessiontype_x               50%
+sessiontype_y               90%
+
+# F1 message
+F1_font             Verdana:size=9
+F1_color            #666666
+F1_x                50%
+F1_y                92%
+F1_msg             (Press F1 to change session type)
+
+# 
+#cust1_color             #9999EE
+#cust1_font              Verdana:size=24
+#cust1_msg               cust1 _ msg      ₭·₮·₯·₹
+#cust1_x                 10%
+#cust1_y                 10%
+
+
+# Other messages
+username_msg                   Login:
+password_msg                   Password:
+password_feedback_capslock_msg     Authentication failed (CapsLock is ON)
+password_feedback_msg              Authentication failed

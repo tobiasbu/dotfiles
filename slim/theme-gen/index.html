@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="/style.css">
+    <script type="text/javascript" src="/index.js"></script>
+  </head>
+  <body>
+    <div class="sl-side-menu">
+      <button onclick="getCoords()">Get coords</button>
+      <button onclick="exportTheme()">Export Theme</button>
+      <input type="checkbox" />
+    </div>
+    <div class="sl-display" id="background">
+      <div id="panel">
+        <p id="welcome">Welcome to this machine</p>
+        <div>
+          <div class="input-container" id="user-field">
+            <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M12 14C8.13401 14 5 17.134 5 21H19C19 17.134 15.866 14 12 14Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <input type="text" id="user-input" >
+          </div>
+          <div class="input-container" id="pass-field">
+            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px">
+              <defs>
+              <style>
+                .cls-1 {
+                fill: none;
+                }
+              </style>
+              </defs>
+              <path d="M21,2a8.9977,8.9977,0,0,0-8.6119,11.6118L2,24v6H8L18.3881,19.6118A9,9,0,1,0,21,2Zm0,16a7.0125,7.0125,0,0,1-2.0322-.3022L17.821,17.35l-.8472.8472-3.1811,3.1812L12.4141,20,11,21.4141l1.3787,1.3786-1.5859,1.586L9.4141,23,8,24.4141l1.3787,1.3786L7.1716,28H4V24.8284l9.8023-9.8023.8472-.8474-.3473-1.1467A7,7,0,1,1,21,18Z"></path>
+              <circle cx="22" cy="10" r="2"></circle>
+              <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" class="cls-1" width="32" height="32"></rect>
+            </svg>
+            <input type="text" id="pass-input" >
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
