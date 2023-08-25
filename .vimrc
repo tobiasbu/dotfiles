@@ -6,10 +6,12 @@
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
 
+Plug 'tpope/vim-fugitive'
+
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
-Plug 'morhetz/gruvbox'
 
+Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
@@ -94,7 +96,7 @@ let g:NERDTreeWinPos = "right"
 "
 
 " NERDTree
-# Auto refreshes NERD Tree on 
+" Auto refreshes NERD Tree on 
 function NERDTreeToggleAndRefresh()
   :NERDTreeToggle
   if g:NERDTree.IsOpen()
@@ -121,4 +123,10 @@ inoremap <A-Down> <Esc>:m .+1<CR>==gi
 inoremap <A-Up> <Esc>:m .-2<CR>==gi
 vnoremap <A-Down> :m '>+1<CR>gv=gv
 vnoremap <A-Up> :m '<-2<CR>gv=gv
+
+" Undo/Redo mappings (ctrl+Z, ctrl+Y)
+nnoremap <C-Z> u
+nnoremap <C-Y> <C-R>
+inoremap <C-Z> <C-O>u
+inoremap <C-Y> <C-O><C-R>
 
